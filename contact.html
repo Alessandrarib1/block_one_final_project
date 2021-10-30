@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alessandra Ribeiro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css\stylesheet-shared.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="css\stylesheet-contactus.css" type="text/css" rel="stylesheet" media="screen">
+    <title>Contact us</title>
+</head>
+<body>
+    <header>
+        <embed src="images\\flight.png" alt="logo">
+        <h1> Travelers </h1>
+        <h2> Discover your dream vacation </h2>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li id="list-item1">
+                <a href="index.html">
+                    Homepage
+                </a>
+            </li>
+            <li id="list-item2">
+                <a href="bestdestinations.html">
+                    Best Destinations
+                </a>
+            </li>
+            <li id="list-item3">
+                <a href="tickets.html">
+                    Tickets
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h1>CONTACT US</h1>
+    <legend>
+        How can we <em>help</em> you?
+    </legend>
+    <section id="destination-grid-container">
+        <form action="/action_page.php"
+              method="post" id="contactUsForm">
+            <section id="contact-grid-container">
+                <fieldset class="form">
+                    <aside id="name">
+                        <label name="Name">
+                            Name*
+                        </label>
+                        <input class="input" type="text" placeholder="Enter your name">
+                    </aside>
+                    <aside id="email">
+                        <label for="email" type="email">
+                            Email*
+                        </label>
+                        <input class="input" type="email" placeholder="Enter your email">
+                    </aside>
+                    <aside id="message">
+                        <label for="message-box">
+                            <strong>Message*</strong>
+                        </label>
+                        <input id="message-box" type="message-box" placeholder="Your message here...">
+                    </aside>
+                    <button id="submitbutton" form="contactUsForm" type="submit" value="submit">Submit</button>
+                </fieldset>
+            </section>
+        </form>
+        <aside id="ibizaPic">
+            <h2>There is no reason to wait, <strong>book</strong> it now!</h2>
+            <p>
+                <a href="https://www.tui.nl/the-ibiza-twiins-50938261/">
+                    <img class="img" src="images\ibiza.jpg" alt="Ibiza">
+                </a>
+                <figcaption>Ibiza</figcaption>
+            </p>
+        </aside>
+        <aside id="madeiraPic">
+            <p>
+                <a href="https://www.tui.nl/florasol-residence-509208473/">
+                    <img class="img" src="images\madeira.jpg" alt="Madeira Portugal" />
+                </a>
+                <figcaption>Madeira Portugal</figcaption>
+            </p>
+        </aside>
+        <aside id="santoPic">
+            <p>
+                <a href="https://www.tui.nl/p/vakantie/griekenland/santorini/">
+                    <img class="img" src="images\santorini1.jpg" alt="Santorini">
+                </a>
+                <figcaption>Santorini - Greece</figcaption>
+            </p>
+        </aside>
+    </section>
+    <footer>
+        <p id="copyright">
+            &#169; 2021 Alessandra Ribeiro
+        </p>
+        <section id="cookie">
+            <h3>Cookie statement</h3>
+            <p>
+                Cookies help us enhance our site, provide social media features, allow us to analyze our
+                traffic, and deliver personalized travel content guaranteed to inspire you to grab your
+                passport.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
