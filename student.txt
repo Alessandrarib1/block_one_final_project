@@ -1,0 +1,4 @@
+Student name: Alessandra Tais Melo Ribeiro
+Student number: 689693
+Student class: IT1c
+URL student GitHub repository: https://github.com/Alessandrarib1/block_one_final_project
