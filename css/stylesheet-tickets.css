@@ -1,0 +1,156 @@
+﻿
+/*for pc*/
+@media (min-width: 1280px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        display: inline;
+    }
+
+    .table{
+        width: 66%;
+        height: auto;
+        border: 2px black solid;
+        margin: 15px;
+        float: inline-start;
+    }
+
+    .source {
+        position: static;
+        width: 66%;
+        height: auto;
+        content: 5px;
+        border: 2px hidden;
+        text-align: center;
+    }
+
+    .asideticket {
+        float: inline-end;
+        float: right;
+        width: 30%;
+        height: auto;
+        border: hidden;
+        bottom: 0;
+
+        
+       
+    }
+    .asideticket > h2 {
+        color: #000184;
+
+    }
+        .img-aside {
+        width: 300px;
+        height: auto;
+    }
+
+
+
+    body {
+        background: #f4cede;
+    }
+
+    tr:nth-child(even) {
+        background-color: pink;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #FFFEFE;
+    }
+
+    col:nth-child(even) {
+        background-color: green;
+    }
+
+    col:nth-child(odd) {
+        background-color: blue;
+    }
+
+    tr {
+        height: 30px;
+    }
+}
+
+
+
+
+    /* for tablet */
+@media (max-width: 1179px ) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        display: inline;
+    }
+
+    table[ class*="table"] {
+        width: 66%;
+        height: auto;
+        border: 2px black solid;
+        margin: 15px;
+        float: inline-start;
+    }
+
+    .source {
+        position: static;
+        width: 66%;
+        height: auto;
+        content: 5px;
+        border: 2px hidden;
+        text-align: center;
+    }
+
+    .asideticket {
+     position: relative;
+        float: right;
+        width: 30%;
+        height: auto;
+        border: hidden;
+        top: 0;
+        clear:both;
+   
+    }
+
+        .asideticket > h2 {
+            color: #000184;
+        }
+
+    .img-aside {
+        display: block;
+        width: 200px;
+        height: auto;
+        clear: both;
+    }
+
+
+
+    body {
+        background: #f4cede;
+    }
+
+    tr:nth-child(even) {
+        background-color: pink;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #FFFEFE;
+    }
+
+    col:nth-child(even) {
+        background-color: green;
+    }
+
+    col:nth-child(odd) {
+        background-color: blue;
+    }
+
+    tr {
+        height: 30px;
+    }
+}
+    }
+    /* for mobile */
+    @media (max-width: 480px) {
+
+    }

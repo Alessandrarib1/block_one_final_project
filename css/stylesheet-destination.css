@@ -1,0 +1,288 @@
+﻿article {
+    border: 5px black solid;
+    padding: 5px;
+}
+#products > aside {
+    border: 5px black solid;
+}
+#logo {
+    grid-area: logoTag;
+}
+
+#websiteTitle {
+    grid-area: titleTag;
+}
+
+#payoff {
+    grid-area: payTag;
+}
+
+
+nav {
+    grid-area: navTag;
+
+}
+
+#article1 {
+    grid-area: oneTag; 
+}
+
+#article2 {
+    grid-area: twoTag; 
+}
+
+#article3 {
+    grid-area: threTag; 
+}
+
+#article4 {
+    grid-area: fourTag; 
+}
+
+#article5 {
+    grid-area: fiveTag; 
+}
+
+#article6 {
+    grid-area: sixTag; 
+}
+
+#product1 {
+    grid-area: prodOne;
+}
+
+#product2{
+    grid-area: prodTwo;
+}
+
+#product3 {
+    grid-area: prodThre;
+}
+
+#copyright {
+    grid-area: copyTag;
+}
+
+#cookie {
+    grid-area: cookieTag;
+}
+
+/* for PC */
+@media (min-width: 1180px)
+{
+    img {
+        max-width: 33%;
+    }
+
+
+    #header-grid-container{
+        display: grid;
+        width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        'logoTag  logoTag  logoTag  logoTag  logoTag  logoTag'
+        'titleTag titleTag titleTag titleTag titleTag titleTag'
+        'payTag   payTag   payTag   payTag   payTag   payTag'
+        'navTag   navTag   navTag   navTag   navTag   navTag';
+    }
+
+    #articles-grid-container{
+        display: grid;
+        width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        'twoTag   twoTag   twoTag   oneTag   oneTag   threTag'
+        'twoTag   twoTag   twoTag   oneTag   oneTag   threTag'
+        'fiveTag  fiveTag  fiveTag  oneTag   oneTag   threTag'
+        'fiveTag  fiveTag  fiveTag  oneTag   oneTag   fourTag'
+        'fiveTag  fiveTag  fiveTag  oneTag   oneTag   fourTag'
+        'fiveTag  fiveTag  fiveTag  oneTag   oneTag   fourTag'
+        'fiveTag  fiveTag  fiveTag  sixTag   sixTag   sixTag'
+    }
+
+    #products-grid-container{
+        display: grid;
+        width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        'prodOne prodOne prodTwo prodTwo prodThre prodThre'
+        'prodOne prodOne prodTwo prodTwo prodThre prodThre'
+        'copyTag copyTag copyTag copyTag cookieTag cookieTag'
+        'copyTag copyTag copyTag copyTag cookieTag cookieTag';
+    }
+    #footer-grid-container{
+        display: grid;
+        width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        'copyTag copyTag copyTag copyTag cookieTag cookieTag'
+        'copyTag copyTag copyTag copyTag cookieTag cookieTag';
+    }
+}
+
+
+
+/* for tablet */
+@media (max-width: 1179px ) and (min-width: 481px) {
+
+    #product3 {
+        display: none;
+    }
+
+    #article4 {
+        display: none;
+    }
+
+    img {
+        max-width: 50%;
+    }
+
+    #cookie {
+        max-width: 50%;
+    }
+
+    aside {
+        max-width: 50%;
+    }
+
+    #header-grid-container{
+        display: grid;
+        max-width: : 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        'logoTag  logoTag  '
+        'titleTag titleTag '
+        'payTag   payTag   '
+        'navTag   navTag   ';
+    }
+
+    #articles-grid-container{
+        display: grid;
+        max-width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'oneTag twoTag'
+        'oneTag twoTag'
+        'threTag twoTag'
+        'threTag fiveTag'
+        'threTag fiveTag'
+        'threTag fiveTag'
+        'sixTag sixTag'
+        'sixTag sixTag';
+    }
+
+    #products-grid-container{
+        display: grid;
+        max-width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        'prodOne prodTwo'
+        'prodOne prodTwo';
+
+    }
+    #footer-grid-container{
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        'copyTag copyTag cookieTag cookieTag'
+        'copyTag copyTag cookieTag cookieTag'
+    }
+}
+
+
+/* for mobile */
+@media (max-width: 480px) 
+{
+    #article4 {
+        display: none;
+    }
+
+    #article6 {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    .header
+    {
+        width: 90%;
+        padding-top: 16px;
+    }
+       #header-grid-container{
+        display: grid;
+        max-width: : 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: 66% 33%;
+        grid-template-areas: 
+        'titleTag navTag'
+        'payTag   navTag';
+    }
+
+    #articles-grid-container{
+        display: grid;
+        max-width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'fiveTag'
+        'fiveTag'
+        'fiveTag'
+        'threTag'
+        'threTag'
+        'threTag'
+        'twoTag'
+        'twoTag'
+        'twoTag'
+        'oneTag'
+        'oneTag'
+        'oneTag';
+    }
+
+    #products-grid-container{
+        display: grid;
+        max-width: 90%;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'prodOne'
+        'prodOne'
+        'prodTwo'
+        'prodThre';
+
+    }
+    #footer-grid-container{
+        display: grid;
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-columns: 66% 33%;
+        grid-template-areas: 
+        'copyTag cookieTag'
+        'copyTag cookieTag';
+    }
+} 
+
+
+ 
+
+
+

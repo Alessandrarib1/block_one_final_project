@@ -1,0 +1,312 @@
+﻿
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Oswald:wght@300&display=swap');
+
+
+
+@media (min-width: 1180px) {
+    body {
+        font-family: Oswald;
+        background-color: #f4cede;
+    }
+
+    h1 {
+        letter-spacing: 3px;
+        line-height: normal;
+        text-indent: 50px;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+        line-height: 2.0;
+        word-spacing: 6px
+    }
+
+    p {
+        letter-spacing: 1.5px;
+        line-height: 1.6;
+        text-indent: 15px;
+        word-spacing: 5px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .header {
+        position: absolute;
+        width: 10px;
+        padding-top: 10px;
+        display: grid;
+    }
+
+    #websiteTitle {
+        transform: skewX(-3deg)
+    }
+
+    .menu {
+        background-color: #2135AA;
+        color: FFFDFD;
+        font-size: medium;
+        border: 5px none;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        list-style: none;
+    }
+
+    #list-item1 a, #list-item2 a, #list-item3 a {
+        background-color: #2135AA;
+        color: white;
+        font-size: large;
+        font-style: initial;
+        float: left;
+        width: 100%;
+        height: auto;
+        border: 10px none;
+        padding: 10px;
+        margin-right: 20px;
+        /*push towards right*/
+    }
+
+    #list-item1 a:active, #list-item2 a:active, #list-item3 a:active { 
+            color: #f4cede;
+            
+        }
+
+        #list-item1{
+        
+        float: inline-start;
+    }
+    #list-item3 {
+        float: inline-end;
+    }
+
+        #list-item1 a:hover, #list-item2 a:hover, #list-item3 a:hover {
+            color: #f4cede;
+            font-size: large;
+        }
+
+    .videos-pc {
+        width: 90%;
+        height: 800px;
+        background-color: white;
+        padding: 10px;
+        border: 10px none;
+        margin: 50px;
+       
+    }
+
+    .video-tablet {
+        display: none;
+    }
+
+    #cookie {
+        width: 25%;
+        position: fixed;
+        border-width: 5px;
+        border-color: black;
+        border-style: double;
+        bottom: 0;
+        right: 0;
+        z-index: 9999;
+        padding: 20px; /*space between the content and the border*/
+        margin: 20px;
+        opacity: 50%; /*level of transperancy*/
+        background-color: #FA0;
+        color: #FFF;
+    }
+
+    #copyright {
+        object-position: bottom left;
+        border-width: 10px;
+        border-color: #f4cede;
+        border-style: double;
+        margin: 20px;
+        background-color: #2135AA;
+        text-align: center;
+        color: white;
+        clear: both;
+    }
+}
+
+
+/* for tablet */
+@media (max-width: 1179px ) {
+
+    body {
+        font-size: 14px;
+        background-color: #f4cede;
+    }
+
+    .header {
+        position: absolute;
+        width: 10px;
+        padding-top: 10px;
+        display: grid;
+    }
+
+    #websiteTitle {
+        transform: skewX(-3deg)
+    }
+
+    .menu {
+        background-color: #2135AA;
+        color: white;
+        font-size: medium;
+        border: 5px none;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        list-style: none;
+    }
+
+    #list-item1 a, #list-item2 a, #list-item3 a {
+        background-color: #2135AA;
+        color: white;
+        font-size: large;
+        font-style: initial;
+        float: left;
+        width: 100%;
+        height: auto;
+        border: 10px none;
+        padding: 10px;
+        margin-right: 20px;
+        /*push towards right*/
+    }
+
+    #list-item1 {
+        float: inline-start;
+    }
+
+    #list-item3 {
+        float: inline-end;
+    }
+
+        #list-item1 a:hover, #list-item2 a:hover, #list-item3 a:hover {
+            color: #f4cede;
+            font-size: large;
+        }
+
+    .video-tablet {
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding: 10px;
+        border: 10px none;
+        margin: 50px;
+    }
+    
+
+    .videos-pc {
+        display: none;
+    }
+    #cookie {
+        width: 25%;
+        position: fixed;
+        border: 10px black solid;
+        bottom: 0;
+        right: 0;
+        padding: 20px; /*space between the content and the border*/
+        margin: 20px;
+        opacity: 50%; /*level of transperancy*/
+        background-color: #FA0;
+        color: #FFF;
+    }
+
+    #copyright {
+        object-position: bottom left;
+        border: 5px solid black;
+        margin: 20px;
+        background-color: #2135AA;
+        text-align: center;
+        color: white;
+        clear: both;
+    }
+
+}
+
+
+/* for mobile */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+        background-color: #f4cede;
+    }
+
+    .menu {
+        background-color: #2135AA;
+        color: white;
+        font-size: medium;
+        border: 5px none;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        list-style: none;
+    }
+
+    #list-item1 a, #list-item2 a, #list-item3 a {
+        background-color: #2135AA;
+        color: white;
+        font-size: large;
+        font-style: initial;
+        float: left;
+        width: 100%;
+        height: auto;
+        border: 10px none;
+        padding: 10px;
+        margin-right: 20px;
+        /*push towards right*/ 
+    }
+
+    #list-item1 {
+        float: inline-start;
+    }
+
+    #list-item3 {
+        float: inline-end;
+    }
+
+    #list-item1 a:hover, #list-item2 a:hover, #list-item3 a:hover {
+        color: #f4cede;
+        font-size: large;
+    }
+
+
+    .video-tablet {
+        display: none;
+    }
+
+
+    .videos-pc {
+        display: none;
+    }
+
+    #cookie {
+        width: 25%;
+        position: fixed;
+        border: 10px black solid;
+        bottom: 0;
+        right: 0;
+        padding: 20px; /*space between the content and the border*/
+        margin: 20px;
+        opacity: 50%; /*level of transperancy*/
+        background-color: #FA0;
+        color: #FFF;
+    }
+
+    #copyright {
+        object-position: bottom left;
+        border: 5px solid black;
+        margin: 20px;
+        background-color: #2135AA;
+        text-align: center;
+        color: white;
+        clear: both;
+    }
+
+}

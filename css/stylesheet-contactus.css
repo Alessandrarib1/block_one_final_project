@@ -1,0 +1,183 @@
+﻿#santoPic {
+    grid-area: sanTag;
+}
+
+#madeiraPic {
+    grid-area: madTag;
+}
+
+#ibizaPic {
+    grid-area: ibiTag;
+}
+
+#contactUsForm {
+    grid-area: conTag;
+}
+
+#name {
+    grid-area: nameTag;
+}
+
+#email {
+    grid-area: emailTag;
+}
+
+#message {
+    grid-area: messageTag;
+}
+
+#submitbutton {
+    grid-area: submitTag;
+}
+/*for pc*/
+@media (min-width: 1180px) {
+    .form {
+        border: 5px black solid;
+        padding: 10px; /*space between the content and the border*/
+        margin: 2px;
+        background-color: #f4cede;
+        color: black;
+        height: 400px;
+        
+        
+    }
+
+    #message-box {
+        width: 40%;
+        height: 130px;
+        border: 2px black solid;
+        clear: both;
+
+    }
+
+    .input /*from the form*/ {
+        border: 2px black solid;
+        width: 40%;
+        height: 30px;
+        padding: 10px;
+        margin: 10px;
+        clear: both;
+        
+    }
+
+    #submitbutton {
+        border: 4px black solid;
+        width: 100px;
+        height: 40px;
+        padding: 5px;
+        margin: 10px;
+        clear: both;
+    }
+
+        #submitbutton:hover {
+            background-color: black;
+            color: white;
+            font-size: large;
+            font-style: initial;
+        }
+        .img{
+            width: 500px;
+            height: auto;
+        }
+
+        #destination-grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 66% auto;
+            grid-template-areas:
+                'conTag ibiTag'
+                'conTag madTag'
+                'conTag sanTag';
+        }
+
+        #contact-grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto;
+            grid-template-areas:
+                'nameTag'
+                'emailTag'
+                'messageTag'
+                'submitTag';
+        }
+}
+
+
+    /* for tablet */
+@media (max-width: 1179px ) {
+
+    .form {
+        border: 5px black solid;
+        padding: 10px; /*space between the content and the border*/
+        margin: 2px;
+        background-color: #f4cede;
+        color: #040404;
+        height: 300px;
+        width: 85%;
+    }
+
+    #message-box {
+        width: 40%;
+        height: 100px;
+        border: 2px black solid;
+        clear: both;
+    }
+
+    .input /*from the form*/ {
+        border: 2px black solid;
+        width: 40%;
+        height: 30px;
+        padding: 10px;
+        margin: 10px;
+        clear: both;
+    }
+
+    #submitbutton {
+        border: 4px black solid;
+        width: 100px;
+        height: 40px;
+        padding: 5px;
+        margin: 10px;
+        clear: both;
+    }
+
+        #submitbutton:hover {
+            background-color: 050505;
+            color: FBFBFB;
+            font-size: large;
+            font-style: initial;
+        }
+
+    .img {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        border: 20px hidden;
+    }
+
+    #destination-grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 66% 33%;
+        grid-template-areas:
+            'conTag ibiTag'
+            'conTag madTag'
+            'conTag sanTag';
+    }
+
+    #contact-grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-areas:
+            'nameTag'
+            'emailTag'
+            'messageTag'
+            'submitTag';
+    }
+}
+    }
+    /* for mobile */
+    @media (max-width: 480px) {
+       
+    }
